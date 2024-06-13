@@ -1,0 +1,1050 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* pointer */
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	background: white;
+	cursor: none;
+}
+#trail-cursor {
+	position: fixed;
+	display: block;
+	border-radius: 0;
+	transform-origin: center center;
+	mix-blend-mode: difference;
+	top: 0;
+	left: 0;
+	z-index: 10000000000000000;
+}
+.circle {
+	pointer-events: none;
+	height: 24px;
+	width: 24px;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* pointer end */
+
+.container {
+    max-width: 1320px;
+    margin: 0px auto;
+}
+
+.row {
+    display: flex;
+}
+
+.row2 {
+    display: flex;
+}
+
+.justify-spacebetween {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.w-1 {
+    width: 8.33%;
+}
+
+.w-2 {
+    width: 16.66%;
+}
+
+.w-3 {
+    width: 25%;
+}
+
+.w-4 {
+    width: 33.33%;
+}
+
+.w-5 {
+    width: 41.66%;
+}
+
+.w-6 {
+    width: 50%;
+}
+
+.w-7 {
+    width: 58.33%;
+}
+
+.w-8 {
+    width: 66.66%;
+}
+
+.w-9 {
+    width: 75%;
+}
+
+.w-10 {
+    width: 83.33%;
+}
+
+.w-11 {
+    width: 91.66%;
+}
+
+.w-12 {
+    width: 100%;
+}
+
+/* header */
+.common {
+    min-height: 110vh;
+    /* border: 1px solid red; */
+    background-image: url(../images/bgimg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+
+.header {
+    padding: 25px;
+}
+
+.header .t1 h1 {
+    font-size: 23px;
+}
+
+.header .t1 {
+    display: flex;
+    align-items: center;
+}
+
+.header .t2 .navbar a {
+    margin: 15px;
+    font-size: 19px;
+    color: black;
+}
+
+.header .t2 {
+    display: flex;
+    align-items: center;
+}
+
+.header .t2 .navbar a {
+    text-decoration: none;
+}
+
+.header .t2 .b1 {
+    height: 50px;
+    width: 100px;
+    background-color: #1976d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .t2 .b1 a {
+    text-decoration: none;
+    color: white;
+}
+
+/* header end */
+
+/* home */
+.home .container .row .w-7 {
+
+    height: 500px;
+    display: flex;
+}
+
+.home .home-content p {
+    font-size: 25px;
+}
+
+.home .home-content h1 {
+    font-size: 50px;
+    color: #1976d2;
+}
+
+.home .container .row .w-5 {
+
+    height: 500px;
+    display: flex;
+}
+
+.home .home-form .form h1 {
+    font-size: 30px;
+}
+
+.home .form {
+    background-color: white;
+    width: 70%;
+    margin-top: 90px;
+}
+
+.home .form .input {
+    width: 90%;
+    padding: 15px;
+    margin: 8px;
+    border-bottom:1px solid lightgray;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.home .form .input2 {
+    width: 10%;
+    padding: 15px;
+    margin: 10px;
+}
+
+.home .form .b2 {
+    text-align: center;
+    background-color: #1976d2;
+    color: white;
+    font-size: 20px;
+   
+}
+
+.home .form .input3 {
+    width: 100%;
+    padding: 15px;
+}
+
+.form .checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
+/* 1 */
+.timer .days .span1 {
+    position: relative;
+}
+
+.timer {
+    display: flex;
+}
+
+
+.timer .days .span1::before {
+    content: "";
+    position: absolute;
+    left: 100px;
+    height: 100px;
+    border: 1px solid lightgray;
+
+}
+
+.timer .days .span1::after {
+    content: "DAYS";
+    position: absolute;
+    font-size: 15px;
+    left: 0px;
+    top: 70px;
+}
+
+
+.timer .days .font {
+    position: relative;
+    font-size: 35px;
+    color: #1976d2;
+    top: 50px;
+    left: 0px;
+}
+
+/* 1 */
+
+/* 2 */
+.timer .days .font2 {
+    position: relative;
+    font-size: 35px;
+    color: #1976d2;
+    top: 50px;
+    left: 10px;
+}
+
+.timer .days .span2 {
+    position: relative;
+}
+
+.timer .days .span2::before {
+    content: "";
+    position: absolute;
+    left: 100px;
+    height: 100px;
+    border: 1px solid lightgray;
+
+}
+
+.timer .days .span2::after {
+    content: "HOURS";
+    position: absolute;
+    font-size: 15px;
+    left: 10px;
+    top: 70px;
+}
+
+/* 2 */
+
+/* 3 */
+.timer .days .font3 {
+    position: relative;
+    font-size: 35px;
+    color: #1e88e5;
+    top: 50px;
+    left: 65px;
+}
+
+.timer .days .span3 {
+    position: relative;
+}
+
+.timer .days .span3::before {
+    content: "";
+    position: absolute;
+    left: 150px;
+    height: 100px;
+    border: 1px solid lightgray;
+
+}
+
+.timer .days .span3::after {
+    content: "MINUTES";
+    position: absolute;
+    font-size: 15px;
+    left: 70px;
+    top: 70px;
+}
+
+/* 3 */
+
+/* 4 */
+.timer .days .font4 {
+    position: relative;
+    font-size: 35px;
+    color: #1976d2;
+    top: 50px;
+    left: 119px;
+}
+
+.timer .days .span4 {
+    position: relative;
+}
+
+.timer .days .span4::before {
+    content: "";
+    position: absolute;
+    left: 195px;
+    height: 100px;
+    border: 1px solid lightgray;
+
+}
+
+.timer .days .span4::after {
+    content: "SECONDS";
+    position: absolute;
+    font-size: 15px;
+    left: 120px;
+    top: 70px;
+}
+
+/* 4 */
+/* home end */
+
+/* info */
+
+.info .info-content ul li {
+    list-style: none;
+    color: white;
+    line-height: 1.8;
+}
+
+.info .info-content li i {
+    font-size: 70px;
+}
+
+.info .info-content li h3 {
+    font-size: 18px;
+}
+
+.info {
+    background-color: #1976d2;
+}
+
+
+.info .container .row .w-3 {
+    margin: 50px;
+}
+
+.info .info-content ul li p {
+    margin-top: 14px;
+}
+
+/* info end */
+
+/* about */
+.about {
+    min-height: 100vh;
+    /* border: 1px solid red; */
+}
+
+.about .about-content ul li {
+    list-style: none;
+}
+
+.about .about-content ul {
+    line-height: 2;
+}
+
+.about .about-content ul li p {
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.about .about-image {
+    position: relative;
+    left: 150px;
+}
+
+.about .about-content ul li .b1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.about .about-content {
+    margin: 30px;
+}
+
+.about .about-content ul li .b1 {
+    height: 50px;
+    width: 100px;
+    background-color: #1976d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.about .about-content ul li h2 {
+    font-size: 45px;
+}
+
+/* about end */
+
+/* schedule */
+
+.schedule {
+    min-height: 100vh;
+    /*         */
+}
+
+.schedule .schedule-heading {
+    text-align: center;
+    padding: 30px;
+}
+
+.schedule .schedule-heading h2 {
+    font-size: 45px;
+}
+
+.schedule .schedule-content {
+    width: 70%;
+    text-align: right;
+    border: 1px solid;
+    position: relative;
+    left: 90px;
+    margin: 10px;
+    padding: 40px;
+    line-height: 1.5;
+    background-color: #1976d2;
+    color: white;
+}
+
+.schedule .schedule-content a p {
+    font-size: 30px;
+}
+
+.schedule .schedule-content2 {
+    margin: 10px;
+}
+
+.schedule .container .row .w-9 {
+    display: flex;
+    /* border: 1px solid; */
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+/* .schedule .container .row2 .w-9{
+    display: flex;
+    border: 1px solid;
+    width:60%;
+    justify-content: space-evenly;
+
+} */
+
+.schedule .schedule-content3 ul li {
+    list-style: none;
+    line-height: 2;
+}
+
+.schedule .schedule-content3 ul li p {
+    line-height: 1.7;
+    margin-top: 6px;
+}
+
+.schedule .schedule-content3 ul li h3 {
+    font-size: 25px;
+    color: #1976d2;
+}
+
+.schedule .schedule-content3 ul li h5 {
+    font-size: 24px;
+    color: #1976d2;
+    margin-top: 6px;
+}
+
+.schedule .schedule-content3 ul li h1 {
+    font-size: 20px;
+    color: #1976d2;
+}
+
+.schedule .schedule-content3 ul li span {
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+.schedule .schedule-content3 ul .founder {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+.schedule .schedule-content3 ul li h6 {
+    font-size: 19px;
+    color: gray;
+}
+
+.justify-right {
+    justify-content: right;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+
+.schedule .container .row2 .w-9 {
+    top: 460px;
+    right: 81px;
+}
+
+.schedule .container .row .w-4 .arrow {
+    right: -10px;
+    top: 50px;
+    font-size: 35px;
+    color: #1976d2;
+}
+
+/* schedule end*/
+
+/* schedule2 */
+.schedule2 {
+    min-height: 110vh;
+    /* border:1px solid blue; */
+}
+
+.schedule2 .schedule-content2 {
+    margin: 0px;
+}
+
+.schedule2 .container .row .w-9 {
+    display: flex;
+    /* border: 1px solid; */
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+.schedule2 .schedule-content3 ul li {
+    list-style: none;
+    line-height: 2;
+}
+
+.schedule2 .schedule-content3 ul li p {
+    line-height: 1.7;
+    margin-top: 4px;
+}
+
+.schedule2 .schedule-content3 ul li h3 {
+    font-size: 25px;
+    color: #1976d2;
+}
+
+.schedule2 .schedule-content3 ul li h5 {
+    font-size: 24px;
+    color: #1976d2;
+    margin-top: 6px;
+}
+
+.schedule2 .schedule-content3 ul li h1 {
+    font-size: 20px;
+    color: #1976d2;
+}
+
+.schedule2 .schedule-content3 ul li span {
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+.schedule2 .schedule-content3 ul .founder {
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+.schedule2 .schedule-content3 ul li h6 {
+    font-size: 19px;
+    color: gray;
+}
+
+.schedule2 .container .row .w-9 {
+    right: 85px;
+
+}
+
+/* schedule2 end */
+
+
+/* schedule3 */
+.schedule3 {
+    min-height: 100vh;
+    /* border:1px solid blue; */
+}
+
+.schedule3 .schedule-content2 {
+    margin: 0px;
+}
+
+.schedule3 .container .row .w-9 {
+    display: flex;
+    /* border: 1px solid; */
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+.schedule3 .schedule-content3 ul li {
+    list-style: none;
+    line-height: 2;
+}
+
+.schedule3 .schedule-content3 ul li p {
+    line-height: 1.7;
+    margin-top: 4px;
+}
+
+.schedule3 .schedule-content3 ul li h3 {
+    font-size: 25px;
+    color: #1976d2;
+}
+
+.schedule3 .schedule-content3 ul li h5 {
+    font-size: 24px;
+    color: #1976d2;
+    margin-top: 6px;
+}
+
+.schedule3 .schedule-content3 ul li h1 {
+    font-size: 20px;
+    color: #1976d2;
+}
+
+.schedule3 .schedule-content3 ul li span {
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+.schedule3 .schedule-content3 ul .founder {
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+.schedule3 .schedule-content3 ul li h6 {
+    font-size: 19px;
+    color: gray;
+}
+
+.schedule3 .container .row .w-9 {
+    right: 85px;
+
+}
+
+/* schedule3 end */
+
+/* gallery */
+.gallery {
+    min-height: 70vh;
+    /* border: 1px solid; */
+}
+
+.gallery .gallery-heading {
+    text-align: center;
+    padding: 30px;
+}
+
+.gallery .gallery-heading h2 {
+    font-size: 30px;
+}
+
+.gallery .container .row .w-3 {
+    margin: 10px;
+}
+
+/* gallery end */
+
+/* review */
+.review {
+    min-height: 100vh;
+    /* border: 1px solid; */
+    width:97%;
+}
+
+.review .review-heading {
+    text-align: center;
+}
+
+.review .review-heading h2 {
+    font-size: 30px;
+}
+
+.review .review-content .review-image img {
+    width: 100px;
+    height: 100px;
+}
+
+.review .review-content .review-image img {
+    top: 10px;
+    left: 10px;
+}
+
+.review .row .review-content {
+    text-align: center;
+    /* border: 1px solid; */
+}
+
+.review .row .review-content ul li{
+    list-style: none;
+}
+
+.review .row .review-content ul li h3{
+    color: #1976d2;
+}
+
+.review .row .review-content ul li h5{
+    color: grey;
+}
+
+.review .row .review-content ul{
+    line-height: 2;
+}
+
+.review .container .row .w-4 {
+    margin:30px;
+}
+
+.review .container .row .review-content .review-image {
+    width: 19%;
+    height: 120px;
+    background-color:#1976d2;
+    margin: 50px;
+    left:20px
+}
+
+/* review end */
+
+/* ticket */
+.ticket{
+    min-height: 100vh;
+    /* border: 1px solid; */
+}
+
+.ticket .ticket-heading {
+    text-align: center;
+    padding: 20px;
+}
+
+.ticket .ticket-heading h2 {
+    font-size: 30px;
+}
+
+.ticket .ticket-content ul li{
+    list-style: none;
+    line-height:2.3;
+}
+
+.ticket .ticket-content ul {
+    text-align: center;
+}
+
+.ticket .ticket-content ul li h6{
+    font-size: 15px;
+}
+
+.ticket .ticket-content ul li h1{
+    font-size:28px;
+    color: #1976d2;
+}
+
+.ticket .ticket-content ul li h2{
+    font-size:28px;
+    color: white;
+}
+
+.ticket .ticket-content ul li h5{
+    font-size:15px;
+    color: #1976d2;
+}
+
+.ticket .ticket-content ul li h4{
+    font-size:15px;
+    color: white;
+}
+
+.ticket .ticket-content ul li .b3{
+    text-align: center;
+    background-color: #1976d2;
+    width:80%;
+    margin:20px;
+}
+
+.ticket .ticket-content ul li .button2 .b3{
+    text-align: center;
+    background-color: white;
+    width:80%;
+    margin:20px;
+}
+
+.ticket .ticket-content .button{
+    display: flex;
+    justify-content: center;
+}
+
+.ticket .ticket-content .button2{
+    display: flex;
+    justify-content: center;
+}
+
+.ticket .container .row .w-4{
+    margin:15px;
+} 
+
+.ticket .ticket-content{
+    border:1px solid grey;
+    box-shadow: 0px 0px 10px  grey;
+}
+
+.background-color{
+    background-color: #1976d2;
+}
+
+.background-color2{
+    background-color: white;
+}
+
+
+/* ticket end */
+
+/* blog */
+.blog{
+    min-height: 100vh;
+}
+
+.blog .blog-heading {
+    text-align: center;
+    padding: 20px;
+}
+
+.blog .blog-heading h2 {
+    font-size: 30px;
+}
+
+.blog .blog-content ul li{
+    list-style: none;
+}
+
+.blog .blog-content ul{
+    line-height: 2;
+}
+
+.blog .blog-content ul li p{
+ color: grey;
+}
+
+.blog .container .row .w-4{
+    margin:20px;
+}
+/* blog end */
+
+/* subscribe */
+.subscribe{
+    min-height: 60vh;
+}
+
+.subscribe .subscribe-content{
+   /* border: 1px solid; */
+   margin: 40px;
+   text-align: center;
+}
+
+.subscribe .subscribe-content ul li{
+    list-style: none;
+}
+
+.subscribe .subscribe-content ul {
+    line-height: 2;
+}
+
+.subscribe .subscribe-content ul li h1{
+    font-size:35px;
+}
+
+.subscribe .subscribe-content ul li p{
+    font-size:15px;
+    color: gray;
+}
+
+.subscribe .subscribe-content .form .text{
+    margin: 10px;
+    padding: 10px;
+    width:60%;
+    left:70px;
+    top:0px;
+}
+
+.subscribe .subscribe-content .form .sub-btn{
+    background-color: #1976d2;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    right:63px;
+    top:0px;
+}
+/* subscribe end */
+
+/* footer */
+.footer{
+    min-height:100vh;
+    background-color: black;
+}
+
+.footer .container .row .w-3{
+    margin:30px;
+}
+
+.footer .footer-content ul li{
+    list-style: none;
+    color: white;
+}
+
+.footer .footer-content .icon{
+    line-height: 7;
+    font-size: 30px;
+}
+
+.footer .footer-content .icon i{
+    margin:7px;
+}
+
+.footer .footer-content ul li h6{
+    font-size: 20px;
+    line-height:3;
+}
+
+.footer .footer-content ul li p{
+    line-height: 1.5;
+}
+
+.footer .footer-content2 ul li{
+    list-style: none;
+    color: white;
+}
+
+.footer .footer-content2 ul li h6{
+    font-size: 20px;
+    line-height:3;
+}
+
+.footer .footer-content2 ul li a{
+    font-size: 15px;
+    line-height:3;
+}
+
+.footer .footer-content2 ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer .footer-content3 ul li h6{
+    font-size: 20px;
+    line-height:3;
+}
+
+.footer .footer-content3 ul li a{
+    font-size: 15px;
+    line-height:3.5;
+}
+
+.footer .footer-content3 ul li p{
+    font-size: 18px;
+}
+
+.footer .footer-content3 ul li p i{
+    margin-right:10px;
+}
+
+.footer .footer-content3 ul li a i{
+    margin-right:10px;
+}
+
+.footer .footer-content3 ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer .footer-content3 ul li{
+    list-style: none;
+    color: white;
+}
+
+.footer .row .rights p{
+    color: white;
+    text-align: center;
+}
+/* footer */
